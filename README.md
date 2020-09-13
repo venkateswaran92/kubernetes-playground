@@ -4,7 +4,8 @@
 # Minikube installation on AWS ec2 instance
 
 ```
-1.curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+1.Install kubectl
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
@@ -50,7 +51,7 @@ kubectl describe pod nginx
 kubectl get pods -o wide
 ```
  
-# Preplicaset command:
+# Replicaset command:
 ```
 kubectl edit replicaset myapp-replicaset
 kubectl describe replicaset myapp-replicaset

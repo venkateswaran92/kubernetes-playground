@@ -34,8 +34,7 @@ minikube status
 # Run and deploy pod:
 
 ```
-1.Let us run our first container
-kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+1.kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
 2.kubectl get pods
 3.kubectl create deployment hello-minikube --image=gcr.io/google_containers/echoserver:1.4 
 4.kubectl get deployments

@@ -57,4 +57,36 @@ kubectl describe replicaset myapp-replicaset
 kubect delete pod myapp-replicaset
 kubectl create -f replicaset.yaml
 kubectl scale replicaset myapp-replicaset --replicas=4
+get replicasets
+kubectl describe replicasets.app myapp-replicaset
+kubectl get all
+kubectl get replicasets
+
 ```
+
+# Deployment command:
+
+Basic commands
+   kubectl create -f deployment.yaml
+   kubectl describe deployment myapp-deployement
+   kubectl delete deployment myapp-deployement
+   kubectl get deployments
+   kubectl apply -f  deployment.yaml --record 
+
+Create delpoyment
+   kubectl create -f deployment.yaml
+Edit delpoyment
+    kubectl edit deployment/myapp-deployement
+Update delpoyment
+    kubectl apply -f deployment.yaml
+	kubectl set image deployment/myapp-deployement nginx=nginx
+Status 
+     kubectl rollout status deployment/myapp-deployement
+	 kubectl rollout history deployment/myapp-deployement
+	 
+Rollback
+      kubectl rollout undo deployment/myapp-deployement
+	 
+	
+	
+	

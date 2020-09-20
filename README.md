@@ -65,7 +65,7 @@ kubectl get replicasets
 ```
 
 # Deployment command:
-
+```
 Basic commands
    kubectl create -f deployment.yaml
    kubectl describe deployment myapp-deployement
@@ -87,6 +87,6 @@ Status
 Rollback
       kubectl rollout undo deployment/myapp-deployement
 	 
-	
+```	
 	
 	

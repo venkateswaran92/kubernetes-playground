@@ -88,5 +88,15 @@ Rollback
       kubectl rollout undo deployment/myapp-deployement
 	 
 ```	
-	
-	
+
+# Service command:	
+```
+Create delpoyment
+   kubectl create -f service-definiation.yaml
+Get service   
+   kubectl get service
+   Get url from minikube   
+   minikube service  myapp-service --url
+   
+
+```
